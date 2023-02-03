@@ -1,0 +1,33 @@
+//for api 1 creating user and checkign password 
+POST http://localhost:3000/register
+content-type:application/json 
+
+{
+    "username":"adam_richard",
+    "name":"Adam Richard",
+    "password":"richard_567",
+    "gender":"male",
+    "location":"Detroit"
+}
+
+###
+// login api
+POST http://localhost:3000/login
+content-type:application/json 
+
+{
+    "username":"adam_richard",
+    "password":"richard_567"
+}
+
+//changing  password api
+
+###
+PUT http://localhost:3000/change-password
+content-type:application/json 
+
+{
+    "username":"adam_richard",
+    "oldPassword":"richard_567",
+    "newPassword":"richard@123"
+}
